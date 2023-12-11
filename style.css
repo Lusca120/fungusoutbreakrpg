@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.button {
+    background-image: linear-gradient(to left, #c01313, #a00e0e,#850000, #690000);
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 25px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 35px;
+    
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+  
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+
+@keyframes button {
+    0% {
+        padding: 15px 25px;
+    }
+
+    50% {
+        padding: 17px 20px;
+    }
+
+    100% {
+        padding: 15px 25px;
+    }
+}
+
+.button:hover {
+    background-color: rgb(218, 218, 218);
+    color: rgb(0, 0, 0);
+    animation: button;
+    animation-duration: 0.7s;
+}
+
+  .menu .li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .menu .li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+
+  .titulo {
+    width: 410px;
+    height: 32px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .t {
+    font-family: Andale Mono, monospace;
+    color: #820000;
+    font-size: 48px;
+    padding-left: 35px;
+  }
+
+  .t2 {
+    font-family: Andale Mono, monospace;
+    color: #820000;
+    font-size: 40px;
+    padding-left: 35px;
+  }
+
+  .t3 {
+    font-family: Blippo, fantasy;
+    font-size: 40px;
+  }
+
+  .t4 {
+    color: #820000;
+  }
+
+  .p {
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    text-align: justify;
+    padding: 30px;
+  }
+
+  :root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+  }
+  
+  html {
+    transition: all 0.5s ease-in;
+  }
+  
+  html.dark {
+    --primary-color: #fff;
+    --secondary-color: #ffffff;
+  }
+  
+  html.dark {
+    background-color: #0e0404;
+    color: var(--primary-color);
+  }
+
+  .toggle {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .toggle:focus {
+    outline: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    position: fixed;
+    background-color: #000000;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: right;
+    padding: 0px 20px 20px 790px;
+    justify-content: space-between;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav.active {
+    background-color: #ffffffbe;
+    box-shadow: 0 2px 10px rgba(190, 12, 12, 0.3);
+  }
+  
+  .nav.active a {
+    color: #000;
+  }
+  
+  .nav.active .container {
+    padding: 10px 0;
+  }
+  
+  .nav a.current,
+  .nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+  }
+
+  .main {
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+.test {
+  padding: 200%;
+}
+
+.gallery {
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(10, 80vw);
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	overflow: scroll;
+	height: 65vh;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+}
+
+.active2 {
+	scroll-snap-type: unset;
+}
+
+.li2 {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+  border-radius: 35px 42%;
+  box-shadow: 0 2px 10px rgba(255, 18, 18, 0.322);
+}
+
+.img {
+  border-start-end-radius: 250px ;
+  border-end-end-radius: 250px ;
+  box-shadow: 0 20px 1px rgba(34, 34, 34, 0.322);
+}
+
+.img2 {
+  border-end-start-radius: 250px ;
+  border-start-start-radius: 250px ;
+  box-shadow: 0 20px 1px rgba(34, 34, 34, 0.322);
+}
+
+.colunadois {
+  padding-top: 13%;
+  padding-right: 0%;
+  float: right;
+  z-index: -1;
+}
+
+.colunaum {
+  float: left;
+  padding-top: 20%;
+  z-index: -1;
+}
